@@ -1,0 +1,176 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_circle_24" />
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Delivery"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+    </LinearLayout><!--Icon-->
+
+
+        <!-- Search Bar -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search for dishes or restaurants"
+            android:background="@android:color/darker_gray"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Featured Dishes Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Dishes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Horizontal Scroll for Featured Dishes -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Dish 1 -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pizza"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"/>
+
+                <!-- Dish 2 -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/burg"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"/>
+
+                <!-- Dish 3 -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/salad"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Category Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pizza"
+                android:backgroundTint="@android:color/holo_orange_light"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Burgers"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:layout_marginLeft="8dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salads"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <!-- Popular Dishes Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Dishes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Popular Dish 2 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dosa"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/idli"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/rolls"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ramen"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+            </ScrollView>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
